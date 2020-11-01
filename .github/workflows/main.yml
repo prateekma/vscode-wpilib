@@ -164,6 +164,7 @@ jobs:
       - uses: softprops/action-gh-release@v1
         name: Release
         with:
+          body_path: .github/ReleaseBody.txt
           prerelease: true
           files: "**/*"
         env:
