@@ -35,7 +35,7 @@ jobs:
         run: npm run signMac
         working-directory: wpilib-utility-standalone
       - name: Notarize Standalone Utility
-        uses: prateekma/xcode-notarize@increase-timeout
+        uses: wpilibsuite/xcode-notarize@v1
         with:
           product-path: "wpilib-utility-standalone/build/wpilibutility-darwin-x64/wpilibutility.app"
           primary-bundle-id: com.prateekma.test.wpilibinstaller
